@@ -1,0 +1,24 @@
+get http://localhost:3003/videos
+###
+
+post http://localhost:3003/videos
+Content-Type: application/json
+
+{
+    "id": "v002",
+    "titulo": "Atividade avaliativa Labenu 2",
+    "duracao": 160
+}
+###
+
+put http://localhost:3003/videos/v001
+Content-Type: application/json
+
+{
+    "titulo": "Atividade avaliativa Labenu 1",
+    "duracao": 1600
+}
+###
+
+delete http://localhost:3003/videos/v001
+###
